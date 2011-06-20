@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A899BE0413AF51B20083B908 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899BE0313AF51B20083B908 /* UIKit.framework */; };
+		A899BE0613AF51B20083B908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899BE0513AF51B20083B908 /* Foundation.framework */; };
+		A899BE0813AF51B20083B908 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899BE0713AF51B20083B908 /* CoreGraphics.framework */; };
+		A899BE0E13AF51B20083B908 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A899BE0C13AF51B20083B908 /* InfoPlist.strings */; };
+		A899BE1113AF51B20083B908 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A899BE1013AF51B20083B908 /* main.m */; };
+		A899BE1413AF51B20083B908 /* PinCodeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A899BE1313AF51B20083B908 /* PinCodeAppDelegate.m */; };
+		A899BE1813AF51B20083B908 /* PinCodeAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A899BE1713AF51B20083B908 /* PinCodeAppDelegate_iPhone.m */; };
+		A899BE1B13AF51B30083B908 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A899BE1913AF51B30083B908 /* MainWindow_iPhone.xib */; };
+		A899BE1F13AF51B30083B908 /* PinCodeAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A899BE1E13AF51B30083B908 /* PinCodeAppDelegate_iPad.m */; };
+		A899BE2213AF51B30083B908 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A899BE2013AF51B30083B908 /* MainWindow_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A899BDFF13AF51B20083B908 /* PinCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A899BE0313AF51B20083B908 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A899BE0513AF51B20083B908 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A899BE0713AF51B20083B908 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A899BE0B13AF51B20083B908 /* PinCode-Info.plist */ = {isa = PBXFileReference; path = "PinCode-Info.plist"; sourceTree = "<group>"; };
+		A899BE0D13AF51B20083B908 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A899BE0F13AF51B20083B908 /* PinCode-Prefix.pch */ = {isa = PBXFileReference; path = "PinCode-Prefix.pch"; sourceTree = "<group>"; };
+		A899BE1013AF51B20083B908 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A899BE1213AF51B20083B908 /* PinCodeAppDelegate.h */ = {isa = PBXFileReference; path = PinCodeAppDelegate.h; sourceTree = "<group>"; };
+		A899BE1313AF51B20083B908 /* PinCodeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinCodeAppDelegate.m; sourceTree = "<group>"; };
+		A899BE1613AF51B20083B908 /* PinCodeAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = PinCodeAppDelegate_iPhone.h; path = iPhone/PinCodeAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		A899BE1713AF51B20083B908 /* PinCodeAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PinCodeAppDelegate_iPhone.m; path = iPhone/PinCodeAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		A899BE1A13AF51B30083B908 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		A899BE1D13AF51B30083B908 /* PinCodeAppDelegate_iPad.h */ = {isa = PBXFileReference; name = PinCodeAppDelegate_iPad.h; path = iPad/PinCodeAppDelegate_iPad.h; sourceTree = "<group>"; };
+		A899BE1E13AF51B30083B908 /* PinCodeAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PinCodeAppDelegate_iPad.m; path = iPad/PinCodeAppDelegate_iPad.m; sourceTree = "<group>"; };
+		A899BE2113AF51B30083B908 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A899BDFC13AF51B20083B908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A899BE0413AF51B20083B908 /* UIKit.framework in Frameworks */,
+				A899BE0613AF51B20083B908 /* Foundation.framework in Frameworks */,
+				A899BE0813AF51B20083B908 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A899BDF413AF51B20083B908 = {
+			isa = PBXGroup;
+			children = (
+				A899BE0913AF51B20083B908 /* PinCode */,
+				A899BE0213AF51B20083B908 /* Frameworks */,
+				A899BE0013AF51B20083B908 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A899BE0013AF51B20083B908 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A899BDFF13AF51B20083B908 /* PinCode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A899BE0213AF51B20083B908 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A899BE0313AF51B20083B908 /* UIKit.framework */,
+				A899BE0513AF51B20083B908 /* Foundation.framework */,
+				A899BE0713AF51B20083B908 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A899BE0913AF51B20083B908 /* PinCode */ = {
+			isa = PBXGroup;
+			children = (
+				A899BE1213AF51B20083B908 /* PinCodeAppDelegate.h */,
+				A899BE1313AF51B20083B908 /* PinCodeAppDelegate.m */,
+				A899BE1513AF51B20083B908 /* iPhone */,
+				A899BE1C13AF51B30083B908 /* iPad */,
+				A899BE0A13AF51B20083B908 /* Supporting Files */,
+			);
+			path = PinCode;
+			sourceTree = "<group>";
+		};
+		A899BE0A13AF51B20083B908 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A899BE0B13AF51B20083B908 /* PinCode-Info.plist */,
+				A899BE0C13AF51B20083B908 /* InfoPlist.strings */,
+				A899BE0F13AF51B20083B908 /* PinCode-Prefix.pch */,
+				A899BE1013AF51B20083B908 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A899BE1513AF51B20083B908 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				A899BE1613AF51B20083B908 /* PinCodeAppDelegate_iPhone.h */,
+				A899BE1713AF51B20083B908 /* PinCodeAppDelegate_iPhone.m */,
+				A899BE1913AF51B30083B908 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		A899BE1C13AF51B30083B908 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				A899BE1D13AF51B30083B908 /* PinCodeAppDelegate_iPad.h */,
+				A899BE1E13AF51B30083B908 /* PinCodeAppDelegate_iPad.m */,
+				A899BE2013AF51B30083B908 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A899BDFE13AF51B20083B908 /* PinCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A899BE2513AF51B30083B908 /* Build configuration list for PBXNativeTarget "PinCode" */;
+			buildPhases = (
+				A899BDFB13AF51B20083B908 /* Sources */,
+				A899BDFC13AF51B20083B908 /* Frameworks */,
+				A899BDFD13AF51B20083B908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinCode;
+			productName = PinCode;
+			productReference = A899BDFF13AF51B20083B908 /* PinCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A899BDF613AF51B20083B908 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A899BDF913AF51B20083B908 /* Build configuration list for PBXProject "PinCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A899BDF413AF51B20083B908;
+			productRefGroup = A899BE0013AF51B20083B908 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A899BDFE13AF51B20083B908 /* PinCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A899BDFD13AF51B20083B908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A899BE0E13AF51B20083B908 /* InfoPlist.strings in Resources */,
+				A899BE1B13AF51B30083B908 /* MainWindow_iPhone.xib in Resources */,
+				A899BE2213AF51B30083B908 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A899BDFB13AF51B20083B908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A899BE1113AF51B20083B908 /* main.m in Sources */,
+				A899BE1413AF51B20083B908 /* PinCodeAppDelegate.m in Sources */,
+				A899BE1813AF51B20083B908 /* PinCodeAppDelegate_iPhone.m in Sources */,
+				A899BE1F13AF51B30083B908 /* PinCodeAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A899BE0C13AF51B20083B908 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A899BE0D13AF51B20083B908 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A899BE1913AF51B30083B908 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A899BE1A13AF51B30083B908 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		A899BE2013AF51B30083B908 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A899BE2113AF51B30083B908 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A899BE2313AF51B30083B908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A899BE2413AF51B30083B908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A899BE2613AF51B30083B908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinCode/PinCode-Prefix.pch";
+				INFOPLIST_FILE = "PinCode/PinCode-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A899BE2713AF51B30083B908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinCode/PinCode-Prefix.pch";
+				INFOPLIST_FILE = "PinCode/PinCode-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A899BDF913AF51B20083B908 /* Build configuration list for PBXProject "PinCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A899BE2313AF51B30083B908 /* Debug */,
+				A899BE2413AF51B30083B908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A899BE2513AF51B30083B908 /* Build configuration list for PBXNativeTarget "PinCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A899BE2613AF51B30083B908 /* Debug */,
+				A899BE2713AF51B30083B908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A899BDF613AF51B20083B908 /* Project object */;
+}
