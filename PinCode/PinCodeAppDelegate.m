@@ -17,6 +17,21 @@
 {
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
+    
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        
+        pinCode=[[PinCode alloc] initWithNibName:@"PinCode" bundle:nil];
+        [self.window addSubview: pinCode.view];
+    }
+    else {
+        
+    }
+    
+    
+    
+
+    
     return YES;
 }
 
@@ -61,6 +76,7 @@
 
 - (void)dealloc
 {
+    [pinCode release];
     [_window release];
     [super dealloc];
 }

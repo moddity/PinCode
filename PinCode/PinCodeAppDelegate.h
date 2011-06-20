@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PinCode.h"
 
 @interface PinCodeAppDelegate : NSObject <UIApplicationDelegate> {
 
+    PinCode *pinCode;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
