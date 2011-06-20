@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A81C932A13AF69D200809505 /* boton_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = A81C932213AF69D200809505 /* boton_cancel.png */; };
+		A81C932B13AF69D200809505 /* boton_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A81C932313AF69D200809505 /* boton_cancel@2x.png */; };
+		A81C932C13AF69D200809505 /* boton_pad.png in Resources */ = {isa = PBXBuildFile; fileRef = A81C932413AF69D200809505 /* boton_pad.png */; };
+		A81C932D13AF69D200809505 /* boton_pad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A81C932513AF69D200809505 /* boton_pad@2x.png */; };
+		A81C932E13AF69D200809505 /* dibujo_atras.png in Resources */ = {isa = PBXBuildFile; fileRef = A81C932613AF69D200809505 /* dibujo_atras.png */; };
+		A81C932F13AF69D200809505 /* dibujo_atras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A81C932713AF69D200809505 /* dibujo_atras@2x.png */; };
+		A81C933013AF69D200809505 /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = A81C932813AF69D200809505 /* fondo.png */; };
+		A81C933113AF69D200809505 /* fondo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A81C932913AF69D200809505 /* fondo@2x.png */; };
 		A899BE0413AF51B20083B908 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899BE0313AF51B20083B908 /* UIKit.framework */; };
 		A899BE0613AF51B20083B908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899BE0513AF51B20083B908 /* Foundation.framework */; };
 		A899BE0813AF51B20083B908 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899BE0713AF51B20083B908 /* CoreGraphics.framework */; };
@@ -22,6 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A81C932213AF69D200809505 /* boton_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boton_cancel.png; sourceTree = "<group>"; };
+		A81C932313AF69D200809505 /* boton_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton_cancel@2x.png"; sourceTree = "<group>"; };
+		A81C932413AF69D200809505 /* boton_pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boton_pad.png; sourceTree = "<group>"; };
+		A81C932513AF69D200809505 /* boton_pad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton_pad@2x.png"; sourceTree = "<group>"; };
+		A81C932613AF69D200809505 /* dibujo_atras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dibujo_atras.png; sourceTree = "<group>"; };
+		A81C932713AF69D200809505 /* dibujo_atras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dibujo_atras@2x.png"; sourceTree = "<group>"; };
+		A81C932813AF69D200809505 /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo.png; sourceTree = "<group>"; };
+		A81C932913AF69D200809505 /* fondo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fondo@2x.png"; sourceTree = "<group>"; };
 		A899BDFF13AF51B20083B908 /* PinCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A899BE0313AF51B20083B908 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A899BE0513AF51B20083B908 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,6 +73,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A81C931613AF69AB00809505 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A81C932213AF69D200809505 /* boton_cancel.png */,
+				A81C932313AF69D200809505 /* boton_cancel@2x.png */,
+				A81C932413AF69D200809505 /* boton_pad.png */,
+				A81C932513AF69D200809505 /* boton_pad@2x.png */,
+				A81C932613AF69D200809505 /* dibujo_atras.png */,
+				A81C932713AF69D200809505 /* dibujo_atras@2x.png */,
+				A81C932813AF69D200809505 /* fondo.png */,
+				A81C932913AF69D200809505 /* fondo@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A899BDF413AF51B20083B908 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +118,7 @@
 		A899BE0913AF51B20083B908 /* PinCode */ = {
 			isa = PBXGroup;
 			children = (
+				A81C931613AF69AB00809505 /* Resources */,
 				A899BE1213AF51B20083B908 /* PinCodeAppDelegate.h */,
 				A899BE1313AF51B20083B908 /* PinCodeAppDelegate.m */,
 				A899BE1513AF51B20083B908 /* iPhone */,
@@ -181,6 +213,14 @@
 				A899BE1B13AF51B30083B908 /* MainWindow_iPhone.xib in Resources */,
 				A899BE2213AF51B30083B908 /* MainWindow_iPad.xib in Resources */,
 				A899BE2C13AF51EC0083B908 /* PinCode.xib in Resources */,
+				A81C932A13AF69D200809505 /* boton_cancel.png in Resources */,
+				A81C932B13AF69D200809505 /* boton_cancel@2x.png in Resources */,
+				A81C932C13AF69D200809505 /* boton_pad.png in Resources */,
+				A81C932D13AF69D200809505 /* boton_pad@2x.png in Resources */,
+				A81C932E13AF69D200809505 /* dibujo_atras.png in Resources */,
+				A81C932F13AF69D200809505 /* dibujo_atras@2x.png in Resources */,
+				A81C933013AF69D200809505 /* fondo.png in Resources */,
+				A81C933113AF69D200809505 /* fondo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
