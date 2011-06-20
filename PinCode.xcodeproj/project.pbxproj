@@ -24,16 +24,16 @@
 		A899BE0313AF51B20083B908 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A899BE0513AF51B20083B908 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A899BE0713AF51B20083B908 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A899BE0B13AF51B20083B908 /* PinCode-Info.plist */ = {isa = PBXFileReference; path = "PinCode-Info.plist"; sourceTree = "<group>"; };
+		A899BE0B13AF51B20083B908 /* PinCode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinCode-Info.plist"; sourceTree = "<group>"; };
 		A899BE0D13AF51B20083B908 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A899BE0F13AF51B20083B908 /* PinCode-Prefix.pch */ = {isa = PBXFileReference; path = "PinCode-Prefix.pch"; sourceTree = "<group>"; };
+		A899BE0F13AF51B20083B908 /* PinCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinCode-Prefix.pch"; sourceTree = "<group>"; };
 		A899BE1013AF51B20083B908 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A899BE1213AF51B20083B908 /* PinCodeAppDelegate.h */ = {isa = PBXFileReference; path = PinCodeAppDelegate.h; sourceTree = "<group>"; };
+		A899BE1213AF51B20083B908 /* PinCodeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinCodeAppDelegate.h; sourceTree = "<group>"; };
 		A899BE1313AF51B20083B908 /* PinCodeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinCodeAppDelegate.m; sourceTree = "<group>"; };
-		A899BE1613AF51B20083B908 /* PinCodeAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = PinCodeAppDelegate_iPhone.h; path = iPhone/PinCodeAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		A899BE1613AF51B20083B908 /* PinCodeAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PinCodeAppDelegate_iPhone.h; path = iPhone/PinCodeAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		A899BE1713AF51B20083B908 /* PinCodeAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PinCodeAppDelegate_iPhone.m; path = iPhone/PinCodeAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		A899BE1A13AF51B30083B908 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		A899BE1D13AF51B30083B908 /* PinCodeAppDelegate_iPad.h */ = {isa = PBXFileReference; name = PinCodeAppDelegate_iPad.h; path = iPad/PinCodeAppDelegate_iPad.h; sourceTree = "<group>"; };
+		A899BE1D13AF51B30083B908 /* PinCodeAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PinCodeAppDelegate_iPad.h; path = iPad/PinCodeAppDelegate_iPad.h; sourceTree = "<group>"; };
 		A899BE1E13AF51B30083B908 /* PinCodeAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PinCodeAppDelegate_iPad.m; path = iPad/PinCodeAppDelegate_iPad.m; sourceTree = "<group>"; };
 		A899BE2113AF51B30083B908 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -300,6 +300,7 @@
 				A899BE2713AF51B30083B908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
