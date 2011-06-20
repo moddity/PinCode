@@ -10,6 +10,24 @@
 
 
 @implementation PinCode
+@synthesize firstElementTextField;
+@synthesize fourthElementTextField;
+@synthesize oneButton;
+@synthesize twoButton;
+@synthesize threeButton;
+@synthesize fourButton;
+@synthesize fiveButton;
+@synthesize sixButton;
+@synthesize sevenButton;
+@synthesize eightButton;
+@synthesize nineButton;
+@synthesize zeroButton;
+@synthesize deleteButton;
+@synthesize titleLabel;
+@synthesize cancelButton;
+@synthesize descriptionLabel;
+@synthesize secondElementTextField;
+@synthesize thirdElementTextField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,6 +40,24 @@
 
 - (void)dealloc
 {
+    [firstElementTextField release];
+    [fourthElementTextField release];
+    [secondElementTextField release];
+    [thirdElementTextField release];
+    [titleLabel release];
+    [cancelButton release];
+    [descriptionLabel release];
+    [oneButton release];
+    [twoButton release];
+    [threeButton release];
+    [fourButton release];
+    [fiveButton release];
+    [sixButton release];
+    [sevenButton release];
+    [nineButton release];
+    [eightButton release];
+    [zeroButton release];
+    [deleteButton release];
     [super dealloc];
 }
 
@@ -43,6 +79,24 @@
 
 - (void)viewDidUnload
 {
+    [self setFirstElementTextField:nil];
+    [self setFourthElementTextField:nil];
+    [self setSecondElementTextField:nil];
+    [self setThirdElementTextField:nil];
+    [self setTitleLabel:nil];
+    [self setCancelButton:nil];
+    [self setDescriptionLabel:nil];
+    [self setOneButton:nil];
+    [self setTwoButton:nil];
+    [self setThreeButton:nil];
+    [self setFourButton:nil];
+    [self setFiveButton:nil];
+    [self setSixButton:nil];
+    [self setSevenButton:nil];
+    [self setNineButton:nil];
+    [self setEightButton:nil];
+    [self setZeroButton:nil];
+    [self setDeleteButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -54,4 +108,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)buttonPressedAction:(id)sender {
+}
 @end
