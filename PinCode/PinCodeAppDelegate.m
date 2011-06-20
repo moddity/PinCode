@@ -21,10 +21,13 @@
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         
-        pinCode=[[PinCode alloc] initWithNibName:@"PinCode" bundle:nil];
-        [self.window addSubview: pinCode.view];
+        DummyViewController *dummyViewController=[[DummyViewController alloc] initWithNibName:@"DummyViewController" bundle:nil];
+        [self.window addSubview:dummyViewController.view];
     }
     else {
+        
+        
+        
         
     }
     
@@ -76,7 +79,6 @@
 
 - (void)dealloc
 {
-    [pinCode release];
     [_window release];
     [super dealloc];
 }

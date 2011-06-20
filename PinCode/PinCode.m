@@ -10,6 +10,9 @@
 
 
 @implementation PinCode
+
+@synthesize code;
+
 @synthesize firstElementTextField;
 @synthesize fourthElementTextField;
 @synthesize oneButton;
@@ -26,6 +29,7 @@
 @synthesize titleLabel;
 @synthesize cancelButton;
 @synthesize descriptionLabel;
+@synthesize failedAttemptLabel;
 @synthesize secondElementTextField;
 @synthesize thirdElementTextField;
 
@@ -34,12 +38,17 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        inputCode=[[NSMutableString alloc] initWithCapacity:4];
+        [inputCode setString:@""];
     }
     return self;
 }
 
 - (void)dealloc
 {
+    [inputCode release];
+    
     [firstElementTextField release];
     [fourthElementTextField release];
     [secondElementTextField release];
@@ -58,6 +67,7 @@
     [eightButton release];
     [zeroButton release];
     [deleteButton release];
+    [failedAttemptLabel release];
     [super dealloc];
 }
 
@@ -97,6 +107,7 @@
     [self setEightButton:nil];
     [self setZeroButton:nil];
     [self setDeleteButton:nil];
+    [self setFailedAttemptLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -110,5 +121,95 @@
 }
 
 - (IBAction)buttonPressedAction:(id)sender {
+    
+    [self.failedAttemptLabel setHidden:YES];
+
+    
+    switch ([sender tag]) {
+            
+        case 200: // delete button
+            if ([inputCode length]>0) {
+                
+                // change textfields
+                switch ([inputCode length]) {
+                    case 1:
+                        firstElementTextField.text=@"";
+                        break;
+                    case 2:
+                        secondElementTextField.text=@"";
+                        break;
+                    case 3:
+                        thirdElementTextField.text=@"";
+                        break;
+                    case 4:
+                        fourthElementTextField.text=@"";
+                        break;
+                    default:
+                        break;
+                }
+
+                // delete last input
+                [inputCode deleteCharactersInRange:NSMakeRange([inputCode length]-1, 1)];
+            }
+            break;
+            
+        case 300: // cancel button
+            [self.view removeFromSuperview];
+            //ToDo: call delegate method unload view controller
+            
+            break;
+            
+        default: // number buttons
+            [inputCode appendString:[NSString stringWithFormat:@"%d",[sender tag]-100]];
+            
+            // change textfields
+            switch ([inputCode length]) {
+                case 1:
+                    firstElementTextField.text=@"*";
+                    break;
+                case 2:
+                    secondElementTextField.text=@"*";
+                    break;
+                case 3:
+                    thirdElementTextField.text=@"*";
+                    break;
+                case 4:
+                    fourthElementTextField.text=@"*";
+                    break;
+                default:
+                    break;
+            }
+            break;
+    }
+    
+    NSLog(@"code:%d inputCode:%@ lenght:%d",code,inputCode,[inputCode length]);
+    
+    
+    if ([inputCode length]==4) {
+        
+        // check code
+        if ([inputCode isEqualToString:[NSString stringWithFormat:@"%d",code]]){
+            
+            //ToDo: call delegate method correct code
+            [self.view removeFromSuperview];
+
+            
+            
+        }else{ // bad code
+            
+            //ToDo: call delegate method incorrect code? number of attempts?
+            
+            // resetting
+            [inputCode setString:@""];
+            firstElementTextField.text=@"";
+            secondElementTextField.text=@"";
+            thirdElementTextField.text=@"";
+            fourthElementTextField.text=@"";
+            [self.failedAttemptLabel setHidden:NO];
+        }
+    }
+
 }
+
+
 @end

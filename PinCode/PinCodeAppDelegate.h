@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PinCode.h"
+#import "DummyViewController.h"
 
 @interface PinCodeAppDelegate : NSObject <UIApplicationDelegate> {
 
-    PinCode *pinCode;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
