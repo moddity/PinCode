@@ -310,6 +310,7 @@
 				A899BE2713AF51B30083B908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
