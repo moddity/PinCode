@@ -3,13 +3,14 @@
 //  PinCode
 //
 //  Created by Oriol Vilaró on 20/06/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Bazinga Systems. All rights reserved.
 //
 
 #import "DummyViewController.h"
 
 
 @implementation DummyViewController
+@synthesize pinCodeTextField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,6 +24,7 @@
 - (void)dealloc
 {
     [pinCode release];
+    [pinCodeTextField release];
     [super dealloc];
 }
 
@@ -46,6 +48,7 @@
 
 - (void)viewDidUnload
 {
+    [self setPinCodeTextField:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -61,9 +64,7 @@
     
     pinCode=[[PinCode alloc] initWithNibName:@"PinCode" bundle:nil];
     
-    // configure code
-    [pinCode setCode:1984];
-    
+    [pinCode setDelegate:self];
     
     
     if (UIDeviceOrientationIsPortrait([[UIDevice currentDevice] orientation]))
@@ -80,9 +81,33 @@
     }   
     
     [self.view addSubview:pinCode.view];
-    
-    
-
 
 }
+
+# pragma mark -- PinView delegate methods
+
+-(BOOL) isPinCodeCorrect:(NSString *)PinCode{
+    
+    if ([self.pinCodeTextField.text isEqualToString:PinCode]) {
+        
+        UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Login" message:@"Login successful" delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
+        
+        [alertView show];
+        [alertView release];
+        
+        return YES;
+    }
+    
+    return NO;
+}
+
+
+-(void) pinCodeViewWillClose{
+    
+    [pinCode release];
+}
+
 @end
+
+
+

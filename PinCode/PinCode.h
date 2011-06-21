@@ -3,19 +3,26 @@
 //  PinCode
 //
 //  Created by Oriol Vilaró on 20/06/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Bazinga Systems. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
+@protocol PinCodeDelegate <NSObject>
+
+-(BOOL) isPinCodeCorrect:(NSString*)PinCode;
+
+-(void) pinCodeViewWillClose; 
+
+@end
+
 
 @interface PinCode : UIViewController {
+        
     
-    int code;
+    id<PinCodeDelegate> delegate; 
     
     NSMutableString *inputCode;
-    
-    // connections
     
     UILabel *titleLabel;
     UIButton *cancelButton;     // tag 300
@@ -43,7 +50,7 @@
 
 }
 
-@property (nonatomic, assign) int code;
+@property (assign) id<PinCodeDelegate> delegate;
 
 // connections
 
@@ -72,5 +79,6 @@
 
 - (IBAction)buttonPressedAction:(id)sender;
 
+-(void)checkPinCode;
 
 @end

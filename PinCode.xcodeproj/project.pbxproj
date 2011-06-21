@@ -45,22 +45,22 @@
 		A899BE0B13AF51B20083B908 /* PinCode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinCode-Info.plist"; sourceTree = "<group>"; };
 		A899BE0D13AF51B20083B908 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A899BE0F13AF51B20083B908 /* PinCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinCode-Prefix.pch"; sourceTree = "<group>"; };
-		A899BE1013AF51B20083B908 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A899BE1213AF51B20083B908 /* PinCodeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinCodeAppDelegate.h; sourceTree = "<group>"; };
-		A899BE1313AF51B20083B908 /* PinCodeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinCodeAppDelegate.m; sourceTree = "<group>"; };
-		A899BE1613AF51B20083B908 /* PinCodeAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PinCodeAppDelegate_iPhone.h; path = iPhone/PinCodeAppDelegate_iPhone.h; sourceTree = "<group>"; };
-		A899BE1713AF51B20083B908 /* PinCodeAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PinCodeAppDelegate_iPhone.m; path = iPhone/PinCodeAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		A899BE1013AF51B20083B908 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A899BE1213AF51B20083B908 /* PinCodeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinCodeAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A899BE1313AF51B20083B908 /* PinCodeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PinCodeAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A899BE1613AF51B20083B908 /* PinCodeAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = PinCodeAppDelegate_iPhone.h; path = iPhone/PinCodeAppDelegate_iPhone.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A899BE1713AF51B20083B908 /* PinCodeAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = PinCodeAppDelegate_iPhone.m; path = iPhone/PinCodeAppDelegate_iPhone.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A899BE1A13AF51B30083B908 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		A899BE1D13AF51B30083B908 /* PinCodeAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PinCodeAppDelegate_iPad.h; path = iPad/PinCodeAppDelegate_iPad.h; sourceTree = "<group>"; };
-		A899BE1E13AF51B30083B908 /* PinCodeAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PinCodeAppDelegate_iPad.m; path = iPad/PinCodeAppDelegate_iPad.m; sourceTree = "<group>"; };
+		A899BE1D13AF51B30083B908 /* PinCodeAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = PinCodeAppDelegate_iPad.h; path = iPad/PinCodeAppDelegate_iPad.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A899BE1E13AF51B30083B908 /* PinCodeAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = PinCodeAppDelegate_iPad.m; path = iPad/PinCodeAppDelegate_iPad.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A899BE2113AF51B30083B908 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
-		A899BE2813AF51EC0083B908 /* PinCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinCode.h; sourceTree = "<group>"; };
-		A899BE2913AF51EC0083B908 /* PinCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinCode.m; sourceTree = "<group>"; };
+		A899BE2813AF51EC0083B908 /* PinCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PinCode.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A899BE2913AF51EC0083B908 /* PinCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PinCode.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A899BE2A13AF51EC0083B908 /* PinCode.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinCode.xib; sourceTree = "<group>"; };
 		A8BAA70613AF95F600188C26 /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo.png; sourceTree = "<group>"; };
 		A8BAA70813AF97AD00188C26 /* fondo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fondo@2x.png"; sourceTree = "<group>"; };
-		A8BAA71213AF9C2C00188C26 /* DummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyViewController.h; sourceTree = "<group>"; };
-		A8BAA71313AF9C2C00188C26 /* DummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyViewController.m; sourceTree = "<group>"; };
+		A8BAA71213AF9C2C00188C26 /* DummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DummyViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A8BAA71313AF9C2C00188C26 /* DummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DummyViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A8BAA71413AF9C2C00188C26 /* DummyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DummyViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

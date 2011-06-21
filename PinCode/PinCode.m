@@ -3,7 +3,7 @@
 //  PinCode
 //
 //  Created by Oriol Vilaró on 20/06/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Bazinga Systems. All rights reserved.
 //
 
 #import "PinCode.h"
@@ -11,7 +11,7 @@
 
 @implementation PinCode
 
-@synthesize code;
+@synthesize delegate;
 
 @synthesize firstElementTextField;
 @synthesize fourthElementTextField;
@@ -154,8 +154,9 @@
             break;
             
         case 300: // cancel button
+            
             [self.view removeFromSuperview];
-            //ToDo: call delegate method unload view controller
+            [delegate pinCodeViewWillClose];
             
             break;
             
@@ -179,37 +180,33 @@
                 default:
                     break;
             }
+            
+            if ([inputCode length]==4) {
+                
+                // Check the PinCode later to update the 4th textfield 
+                [self performSelector:@selector(checkPinCode) withObject:nil afterDelay:0.2];
+            }
             break;
-    }
-    
-    NSLog(@"code:%d inputCode:%@ lenght:%d",code,inputCode,[inputCode length]);
-    
-    
-    if ([inputCode length]==4) {
-        
-        // check code
-        if ([inputCode isEqualToString:[NSString stringWithFormat:@"%d",code]]){
-            
-            //ToDo: call delegate method correct code
-            [self.view removeFromSuperview];
-
-            
-            
-        }else{ // bad code
-            
-            //ToDo: call delegate method incorrect code? number of attempts?
-            
-            // resetting
-            [inputCode setString:@""];
-            firstElementTextField.text=@"";
-            secondElementTextField.text=@"";
-            thirdElementTextField.text=@"";
-            fourthElementTextField.text=@"";
-            [self.failedAttemptLabel setHidden:NO];
-        }
-    }
-
+    }    
 }
 
+-(void)checkPinCode{
+    // check code
+    if ([delegate isPinCodeCorrect:inputCode]){
+        
+        [self.view removeFromSuperview];
+        [delegate pinCodeViewWillClose];
+        
+    }else{ // bad code
+        
+        // resetting
+        [inputCode setString:@""];
+        firstElementTextField.text=@"";
+        secondElementTextField.text=@"";
+        thirdElementTextField.text=@"";
+        fourthElementTextField.text=@"";
+        [self.failedAttemptLabel setHidden:NO];
+    }
+}
 
 @end
