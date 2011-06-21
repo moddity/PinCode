@@ -11,7 +11,7 @@
 
 
 @interface DummyViewController : UIViewController<PinCodeDelegate> {
-    PinCode *pinCode;
+    PinCode *pinCodeViewController;
     UITextField *pinCodeTextField;
 }
 @property (nonatomic, retain) IBOutlet UITextField *pinCodeTextField;

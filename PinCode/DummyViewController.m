@@ -23,7 +23,6 @@
 
 - (void)dealloc
 {
-    [pinCode release];
     [pinCodeTextField release];
     [super dealloc];
 }
@@ -62,33 +61,35 @@
 
 - (IBAction)loginAction:(id)sender {
     
-    pinCode=[[PinCode alloc] initWithNibName:@"PinCode" bundle:nil];
+    pinCodeViewController=[[PinCode alloc] initWithNibName:@"PinCode" bundle:nil];
     
-    [pinCode setDelegate:self];
+    [pinCodeViewController setDelegate:self];
     
     
     if (UIDeviceOrientationIsPortrait([[UIDevice currentDevice] orientation]))
     {
-        [pinCode.view setFrame:CGRectMake((self.view.frame.size.width/2)-(pinCode.view.frame.size.width/2),
-                                          (self.view.frame.size.height/2)-(pinCode.view.frame.size.height/2),
-                                          pinCode.view.frame.size.width,
-                                          pinCode.view.frame.size.height)];
+        [pinCodeViewController.view setFrame:CGRectMake(
+                            (self.view.frame.size.width/2)-(pinCodeViewController.view.frame.size.width/2),
+                            (self.view.frame.size.height/2)-(pinCodeViewController.view.frame.size.height/2),
+                            pinCodeViewController.view.frame.size.width,
+                            pinCodeViewController.view.frame.size.height)];
     }else{
-        [pinCode.view setFrame:CGRectMake((self.view.frame.size.height/2)-(pinCode.view.frame.size.width/2),
-                                          (self.view.frame.size.width/2)-(pinCode.view.frame.size.height/2),
-                                          pinCode.view.frame.size.width,
-                                          pinCode.view.frame.size.height)];
-    }   
+        [pinCodeViewController.view setFrame:CGRectMake(
+                            (self.view.frame.size.height/2)-(pinCodeViewController.view.frame.size.width/2),
+                            (self.view.frame.size.width/2)-(pinCodeViewController.view.frame.size.height/2),
+                            pinCodeViewController.view.frame.size.width,
+                            pinCodeViewController.view.frame.size.height)];
+    }  
     
-    [self.view addSubview:pinCode.view];
+    [self.view addSubview:pinCodeViewController.view];
 
 }
 
 # pragma mark -- PinView delegate methods
 
--(BOOL) isPinCodeCorrect:(NSString *)PinCode{
+-(BOOL) isPinCodeCorrect:(NSString *)pinCode{
     
-    if ([self.pinCodeTextField.text isEqualToString:PinCode]) {
+    if ([self.pinCodeTextField.text isEqualToString:pinCode]) {
         
         UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Login" message:@"Login successful" delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
         
@@ -104,7 +105,8 @@
 
 -(void) pinCodeViewWillClose{
     
-    [pinCode release];
+    [pinCodeViewController release];
+    pinCodeViewController=nil;
 }
 
 @end

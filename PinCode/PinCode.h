@@ -10,7 +10,7 @@
 
 @protocol PinCodeDelegate <NSObject>
 
--(BOOL) isPinCodeCorrect:(NSString*)PinCode;
+-(BOOL) isPinCodeCorrect:(NSString*)pinCode;
 
 -(void) pinCodeViewWillClose; 
 
