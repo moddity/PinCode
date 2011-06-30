@@ -1,2 +1,29 @@
+*****************************************************
+*    PINCODE VIEW                                   *
+*    Bazinga Systems (@bazingasystems)              *
+*    http://www.bazingasystems.com                  *
+*****************************************************
+
+////////// WHAT ARE YOU GOING TO FIND HERE//////////
+PinCode shows a view like the iOS generic autentication pinpad.
+This project is able to work on both platforms, Iphone and Ipad, but in this demo, we show Ipad version only. 
+PinCode view supports landscape and portrait mode.
+
+As a demo, you can choose the correct password at the beginning.
+
 PinCode is a simple view to use as a Code Entry.
 
+////////// HOW TO USE IT //////////
+This project contains a simple ViewController and a Delegate Method.
+
+Add the files to your project and call the method PinCode to make it work:
+
+   PinCode pinCodeVC=[[PinCode alloc] initWithNibName:@"PinCode" bundle:nil];
+   [pinCodeVC setDelegate:self];
+   [pinCodeVC.view setFrame:frame];
+   [self.view addSubview:pinCodeViewController.view];
+
+
+////////// DOWNLOAD PROJECT //////////
+To download all files in this repository, click on "Downloads" near the top
+of this page and select tar or zip format.
